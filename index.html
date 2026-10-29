@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hariom Rajwadi – Chai Café in Nana Chiloda, Naroda, Ahmedabad</title>
+<meta name="description" content="Authentic masala chai and maskabun, open 24 hours at Virat Square, Nana Chiloda, Naroda. Serving Ahmedabad since 1989.">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500;700;800&family=Hind+Vadodara:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#06122e; --night-2:#0b1f4d; --neon:#4fc3ff; --neon-soft:#9bdcff;
+  --bg:#ffffff; --bg-2:#eef6ff; --ink:#0a1b3d; --muted:#4a5d82; --line:#cfe3fa; --card:#ffffff;
+  --head:'Baloo Bhai 2','Hind Vadodara',system-ui,sans-serif;
+  --body:'Hind Vadodara','Segoe UI',system-ui,sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#081535;--bg-2:#0b1f4d;--ink:#eaf4ff;--muted:#a9bfe3;--line:#1d3a78;--card:#0d2257}
+}
+:root[data-theme="dark"]{--bg:#081535;--bg-2:#0b1f4d;--ink:#eaf4ff;--muted:#a9bfe3;--line:#1d3a78;--card:#0d2257}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--neon);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+
+/* hero: the neon sign is the one bold moment */
+.hero{background:radial-gradient(ellipse at 50% 38%,var(--night-2) 0%,var(--night) 70%);color:#fff;text-align:center;padding:64px 0 76px;overflow:hidden}
+.open{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(79,195,255,.5);border-radius:99px;padding:6px 16px;font-size:15px;color:var(--neon-soft)}
+.dot{width:9px;height:9px;border-radius:50%;background:#5dffb0;box-shadow:0 0 10px #5dffb0}
+.sign{margin:34px auto 6px;display:inline-block;padding:26px 44px 14px;border:3px solid var(--neon);border-radius:22px;
+  box-shadow:0 0 14px var(--neon),0 0 48px rgba(79,195,255,.45),inset 0 0 22px rgba(79,195,255,.35)}
+.sign .gu{font-family:var(--head);font-weight:800;font-size:clamp(44px,11vw,104px);line-height:1.1;color:#e9f8ff;margin:0;
+  text-shadow:0 0 6px var(--neon),0 0 22px var(--neon),0 0 46px var(--neon)}
+.sign .en{font-family:var(--head);font-weight:700;font-size:clamp(20px,4.4vw,34px);letter-spacing:.18em;color:var(--neon-soft);margin:0;text-shadow:0 0 12px var(--neon)}
+@media (prefers-reduced-motion:no-preference){.sign{animation:flick 1.4s ease-out 1}}
+@keyframes flick{0%{opacity:.1}12%{opacity:1}18%{opacity:.25}30%{opacity:1}36%{opacity:.5}50%,100%{opacity:1}}
+.tag{font-family:var(--head);font-size:clamp(22px,4.4vw,32px);font-weight:700;margin:26px 0 8px}
+.hero p.sub{max-width:520px;margin:0 auto 28px;color:#c4dcff}
+.btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:13px 26px;border-radius:99px;border:2px solid var(--neon);color:#fff;transition:background .2s,color .2s}
+.btn.solid{background:var(--neon);color:var(--night)}
+.btn:hover{background:#fff;color:var(--night);border-color:#fff}
+[hidden]{display:none!important}
+
+section{padding:68px 0}
+h2{font-family:var(--head);font-size:clamp(30px,5vw,44px);line-height:1.15;margin:0 0 14px}
+.lead{max-width:640px;color:var(--muted)}
+
+.story{background:var(--bg-2)}
+.story .grid{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+.since{font-family:var(--head);font-weight:800;font-size:clamp(86px,16vw,150px);line-height:.9;color:var(--night-2);text-align:center;border-left:4px solid var(--neon);padding-left:24px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .since{color:var(--neon)}}
+.since small{display:block;font-size:20px;font-weight:600;color:var(--muted);margin-top:10px}
+
+.menu .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:30px}
+.col{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px}
+.col h3{font-family:var(--head);font-size:24px;margin:0 0 10px;color:var(--night-2)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .col h3{color:var(--neon)}}
+.col ul{list-style:none;margin:0;padding:0}
+.col li{padding:7px 0;border-top:1px dashed var(--line)}
+.col li:first-child{border-top:0}
+.col.feature{background:var(--night-2);border-color:var(--night-2);color:#fff}
+.col.feature h3{color:var(--neon-soft)}
+.col.feature li{border-color:rgba(255,255,255,.2)}
+.note{margin-top:18px;color:var(--muted);font-size:15px}
+
+.visit{background:var(--night);color:#fff}
+.visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.visit h2{color:#fff}
+.visit dl{margin:0}
+.visit dt{color:var(--neon-soft);font-weight:600;margin-top:16px}
+.visit dd{margin:2px 0 0}
+.visit .box{border:2px solid var(--neon);border-radius:18px;padding:28px;box-shadow:0 0 24px rgba(79,195,255,.3)}
+.big{font-family:var(--head);font-size:clamp(34px,6vw,52px);font-weight:800;line-height:1.1;margin:0 0 8px;text-shadow:0 0 18px var(--neon)}
+footer{background:var(--night);color:#9fb8e6;text-align:center;padding:26px 22px 34px;font-size:15px;border-top:1px solid #16306b}
+footer a{color:var(--neon-soft)}
+@media (max-width:760px){.story .grid,.visit .grid{grid-template-columns:1fr}.sign{padding:20px 22px 10px}section{padding:52px 0}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="open"><span class="dot"></span>Open now · 24 hours, 7 days a week</span>
+    <div class="sign" role="img" aria-label="Hari Om Rajwadi">
+      <p class="gu" lang="gu">હરિ ઓમ રાજવાડી</p>
+      <p class="en">HARIOM RAJWADI</p>
+    </div>
+    <p class="tag">Subaah ki pehli chaii</p>
+    <p class="sub">Nana Chiloda mein hamare jaisi chai koi nahi bana sakta. Come by any hour, day or night.</p>
+    <div class="btns">
+      <a class="btn solid" id="dir" href="https://www.google.com/maps/search/?api=1&query=Hariom+Rajwadi+Virat+Square+Nana+Chiloda+Naroda+Ahmedabad" target="_blank" rel="noopener">Get directions</a>
+      <a class="btn" id="call" href="#" hidden>Call us</a>
+      <a class="btn" id="wa" href="#" hidden target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn" href="https://www.instagram.com/hariomrajwadi2026" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="story" id="story">
+  <div class="wrap grid">
+    <div>
+      <h2>Authentic chai, brewed the same way for decades</h2>
+      <p class="lead">Hariom Rajwadi has been serving Nana Chiloda since 1989. Chai lovers in Naroda come for the masala chai and stay for the buttery maskabun, a hot snack, or a cold shake. We never close, so the first cup of the morning, and the last of the night, are always ready.</p>
+    </div>
+    <div class="since" aria-label="Since 1989">1989<small>serving chai since</small></div>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <h2>What we serve</h2>
+    <p class="lead">Start with the chai. Add a maskabun. Take it from there.</p>
+    <div class="cols">
+      <div class="col feature">
+        <h3>Chai</h3>
+        <ul><li>Masala Chai</li></ul>
+        <p style="margin:10px 0 0;font-size:15px;color:#c4dcff">The reason we’re here since 1989.</p>
+      </div>
+      <div class="col">
+        <h3>Maskabun</h3>
+        <ul><li>Maskabun</li><li>Butter Maskabun</li><li>Jam Maskabun</li><li>Chocolate Maskabun</li></ul>
+      </div>
+      <div class="col">
+        <h3>Cold drinks</h3>
+        <ul><li>Milkshakes</li><li>Oreo Shake</li></ul>
+      </div>
+      <div class="col">
+        <h3>Snacks</h3>
+        <ul><li>Vadapav</li><li>Dabeli</li><li>Sandwich</li><li>Puff</li><li>Poha</li></ul>
+      </div>
+      <div class="col">
+        <h3>Also</h3>
+        <ul><li>Ukala</li></ul>
+      </div>
+    </div>
+    <p class="note">Ask at the counter for today’s prices.</p>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap grid">
+    <div>
+      <h2>Come in, any hour</h2>
+      <dl>
+        <dt>Address</dt>
+        <dd>Hariom Rajwadi<br>Virat Square, Nana Chiloda<br>Naroda, Ahmedabad, Gujarat 382330</dd>
+        <dt>Hours</dt>
+        <dd>Open 24 hours, 7 days a week</dd>
+        <dt>Owner</dt>
+        <dd>Arjun Jhala</dd>
+      </dl>
+    </div>
+    <div class="box">
+      <p class="big">Chai is hot.<br>The lights are on.</p>
+      <p style="color:#c4dcff;margin:0 0 20px">Find the glowing blue sign at Virat Square.</p>
+      <a class="btn solid" href="https://www.google.com/maps/search/?api=1&query=Hariom+Rajwadi+Virat+Square+Nana+Chiloda+Naroda+Ahmedabad" target="_blank" rel="noopener">Open in Google Maps</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  © <span id="yr">2026</span> Hariom Rajwadi · Virat Square, Nana Chiloda, Naroda ·
+  <a href="https://www.instagram.com/hariomrajwadi2026" target="_blank" rel="noopener">@hariomrajwadi2026</a>
+</footer>
+
+<script>
+// Add the shop's numbers here. Buttons stay hidden until filled in.
+var PHONE = "";      // e.g. "+919XXXXXXXXX"
+var WHATSAPP = "";   // e.g. "919XXXXXXXXX" (country code, no +)
+if (PHONE){var c=document.getElementById('call');c.href='tel:'+PHONE;c.hidden=false;}
+if (WHATSAPP){var w=document.getElementById('wa');w.href='https://wa.me/'+WHATSAPP+'?text='+encodeURIComponent('Hi Hariom Rajwadi!');w.hidden=false;}
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
